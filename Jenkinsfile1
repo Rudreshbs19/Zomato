@@ -21,7 +21,7 @@ pipeline {
   stage('Tag & Push to DockerHub') {
     steps {
         withCredentials([usernamePassword(
-            credentialsId: 'dockerhub-creds',
+            credentialsId: 'docker-login',
             usernameVariable: 'DOCKERHUB_USER',
             passwordVariable: 'DOCKERHUB_PASS'
         )]) {
