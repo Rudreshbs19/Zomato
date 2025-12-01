@@ -23,7 +23,7 @@ pipeline {
                 script {
                   withCredentials([usernamePassword(credentialsId: 'docker-login', passwordVariable: 'dockerhubpass', usernameVariable: 'dockerhublogin')]) { {
                         sh 'docker login -u  ${dockerhublogin} -p ${dockerhubpas}'
-                        sh "docker push rudreshrudra1924/zomato:latest "
+                        sh "docker push rudreshrudra1924/zomatoapp:1.0 "
                     }
                 }
             }
