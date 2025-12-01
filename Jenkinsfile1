@@ -12,5 +12,10 @@ pipeline {
                 git 'https://github.com/rudreshbs19/zomato.git'
             }
         }
+ stage("Install NPM Dependencies") {
+            steps {
+                sh "npm install"
+            }
+        }
     }
 }
