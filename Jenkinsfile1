@@ -9,7 +9,7 @@ pipeline {
         
         stage ("Git Checkout") {
             steps {
-                git 'https://github.com/rudreshbs19/zomato.git'
+                git 'https://github.com/rudreshbs19/Zomato.git'
             }
         }
 
